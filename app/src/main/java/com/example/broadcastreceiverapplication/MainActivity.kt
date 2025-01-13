@@ -5,6 +5,7 @@ import android.content.IntentFilter
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private lateinit var statusTextView: TextView
+    private lateinit var imageViewUrl: ImageView
     private lateinit var airplaneModeReceiver: AirplaneModeReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         statusTextView = findViewById(R.id.statusTextView)
+        imageViewUrl = findViewById(R.id.imageViewUrl)
 
         // Create and start a background thread
         val backgroundThread = Thread {
@@ -60,6 +63,11 @@ class MainActivity : AppCompatActivity() {
         val backgroundThreadFromRunnnnable = Thread(backgroundRunnable)
         backgroundThreadFromRunnnnable.start()  // Start the background thread
 
+
+        val downloadImageTask = DownloadImageTask(imageViewUrl)
+
+
+        downloadImageTask.execute("https://assets-cdn.ekantipur.com/uploads/source/ads/road-block1180x715px-0312025013226.jpg")
 
     }
 
