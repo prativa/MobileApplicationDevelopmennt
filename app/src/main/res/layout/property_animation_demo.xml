@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/animation_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_200"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Move Horizontally" />
+
+    <Button
+        android:id="@+id/btn_color_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Color" />
+
+    <Button
+        android:id="@+id/btn_scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scale with Bounce" />
+
+    <Button
+        android:id="@+id/btn_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Combination Animation" />
+
+    <Button
+        android:id="@+id/btn_value_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ValueAnimator Demo" />
+</merge>

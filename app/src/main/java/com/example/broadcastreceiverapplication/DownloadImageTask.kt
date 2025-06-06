@@ -26,10 +26,9 @@ class DownloadImageTask(private val imageView: ImageView) : AsyncTask<String, Vo
     }
 
     override fun onPostExecute(result: Bitmap?) {
-        mainThreadHandler.post {
-            result?.let {
-                imageView.setImageBitmap(it)
-            }
-        }
+
+                imageView.setImageBitmap(result)
+            
+
     }
 }

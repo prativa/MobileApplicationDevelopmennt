@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/animation_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/ic_menu_send" />
+
+    <Button
+        android:id="@+id/btn_fade_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fade In" />
+
+    <Button
+        android:id="@+id/btn_slide_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide Up" />
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotate" />
+
+    <Button
+        android:id="@+id/btn_bounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bounce" />
+
+    <Button
+        android:id="@+id/btn_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sequence" />
+</merge>

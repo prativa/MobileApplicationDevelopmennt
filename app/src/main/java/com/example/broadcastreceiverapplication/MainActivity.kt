@@ -28,10 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         // Create and start a background thread
         val backgroundThread = Thread {
-            // Simulate a time-consuming task (e.g., network request or heavy computation)
             Thread.sleep(2000)  // 2-second delay to simulate background work
-
-            // Perform background task
             val result = "Thread Task Completed"
 
             // Now update the UI on the main thread
